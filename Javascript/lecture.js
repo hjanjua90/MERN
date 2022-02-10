@@ -33,5 +33,3 @@
 //     }
 //     console.log('name and index after loop is ' + name + ':' + index);
 //   }
-
-
