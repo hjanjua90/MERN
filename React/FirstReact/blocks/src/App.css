@@ -1,0 +1,76 @@
+.App {
+  text-align: center;
+}
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.header{
+  width: 95%;
+  height: 10vh;
+  margin: 2px auto;
+  background-color: blue;
+  font-size: 50px;
+}
+.main{
+  width: 76%;
+  height: 69vh;
+  margin: 3px 3px;
+  background-color: red;
+  color: white;
+  display: inline-flex;
+  position:relative;
+  flex-direction: row;
+  margin-left:25px;
+  font-size: 50px;
+}
+.navigation{
+  width: 17%;
+  height: 69vh;
+  margin: 3px 3px;
+  background-color: black;
+  color:pink;
+  font-size: 50px;
+  display: inline-block;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+.footer{
+  width: 95%;
+  height: 10vh;
+  margin: 6px auto;
+  background-color:purple;
+  font-size: 40px;
+  display: block;
+  color:azure;
+}
+
+.subcontents{
+  width: 20px;
+  height:200px;
+  margin: auto;
+  background-color: white;
+  color:white;
+  font-size: 10px;
+  z-index: 10;
+}
+.subCon1{
+  color : green;
+}
+
+.subCon2{
+  color :yellow;
+}
+.subCon3{
+  color :pink;
+}

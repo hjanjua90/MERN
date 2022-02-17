@@ -1,0 +1,26 @@
+Week2 day 2 notes
+
+state = object that holds info that may change overtime of the component
+    changing state triggers a "re-render" to update that specific part the component that requires updating 
+    refreshing wipes state clean
+    state can be acceseed using useState "hook" when writing functional components.
+
+Hooks = a special function built to allow us to accesses default react functionality
+    Hooks need to be included with react in our import
+        
+UseState = has getter( this is used to GET the value of the state) and a Setter(USed to SET or CHANGE the value of the sate)
+  
+Sythetic Events Working with state
+
+
+Event Object (E)
+    built in both JS and React to allow us to accesses attributes of the current event object. This is used in conjuction with outr Synthetic Events.
+    Three commonly used eventListeners in React
+        onclick
+        ocChange
+        onSubmit
+
+State in child component is not accessible by others only the child?
+
+
+
