@@ -14,8 +14,12 @@ const Header = (props) => {
 
 
         <div>
-            header
-
+            <ul>
+                style={{
+                    display:"flex",
+            
+                }}
+            </ul>
 
 
         </div>
