@@ -1,0 +1,8 @@
+.App {
+  text-align: center;
+}
+
+.activeTabStyle {
+  border : 1px solid black;
+  background-color: yellowgreen;
+}
