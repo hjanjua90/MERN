@@ -1,0 +1,22 @@
+to create a mongodb project
+    1.create project folder
+    2. create server.js file
+    3. in terminal run npm init -y
+    4.install express: npm install mongoose express nodemon
+    5.to start your server run 
+        nodemon server.js
+
+    6. In config folder create a mongoose.config.js file 
+        - this will help connect mongoose to the mongodb.
+        - in that file add the following code:
+            
+-const mongoose = require('mongoose');
+ 
+mongoose.connect('mongodb://localhost/name_of_your_DB', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
+    .then(() => console.log('Established a connection to the database'))
+    .catch(err => console.log('Something went wrong when connecting to the database ', err));
+
+-folder number2 

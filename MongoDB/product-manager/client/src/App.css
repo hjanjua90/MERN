@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+
+header{
+  font-size: large;
+  margin: auto
+}
+.form-field{
+  color: red;
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  margin: auto;
+  border-radius: 30px;
+  padding: 10px;
+}
