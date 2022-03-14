@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
-import {Button} from 'react-bootstrap';
+// import {Button} from 'react-bootstrap';
 
 // create Form function then create getters and setters for the items in the schema
 const Form = (props)=>{
+    const {productList, setProductList} = props;
     const [title, setTitle] = useState("");
     const [price, setPrice]= useState("");
     const [description, setDescription] = useState("");
@@ -18,6 +19,7 @@ const Form = (props)=>{
             .then((res)=>{
                 console.log(res);
                 console.log(res.data);
+                    setProductList([...productList, res.data])
                     setTitle("");
                     setPrice("")
                     setDescription("");
@@ -33,7 +35,7 @@ const Form = (props)=>{
     return (
         <div >
             <header>Product Manager</header>
-            <form>
+            <form onSubmit={submitHandler}>
                 {/* <Form.Group className="mb-3" controlId="title">
                 <Form.Label>Title</Form.Label>
                 <Form.Control type="text" placeholder="title" />
@@ -67,9 +69,7 @@ const Form = (props)=>{
                     type="text"
                     />
                 </div>
-                <button variant="primary" type="submit">
-                    Create
-                </button>
+                <input className="submit-input" type="submit" value="Create" />
             </form>
         </div>
     )

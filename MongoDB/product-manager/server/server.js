@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(
     // cors allow differents ports to communicate
     cors({
-        origin: "http://locoalhost:3000",
+        origin: "http://localhost:3000",
     }),
 );
 

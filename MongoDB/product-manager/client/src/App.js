@@ -1,13 +1,20 @@
 import './App.css';
-import ReactDOM from 'react-dom';
-import Form from './components/Form';
+import Main from './view/Main';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import DisplayOne from './components/DisplayOne';
+import { BrowserRouter, Route , Routes} from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-      <Form/>
-    </div>
+    <BrowserRouter>
+      <div>
+        <Routes>
+          <Route path="/" element={<Main/>}/>
+          <Route path="/product/:id" element={<DisplayOne/>}/>
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
