@@ -19,10 +19,25 @@ module.exports = {
             .catch((err)=>console.log(err))
     },
 
-    // update one use _id
-    
+    // update one by _id
+    updateProduct: (req, res)=>{
+        Product.findOneAndUpdate({_id:req.params.id}, req.body, {new:true})
+            .then((newProduct)=>res.json(newProduct))
+            .catch((err)=>console.log(err))
+    },
 
-    // delete on
+    // delete one by id 
+    deleteProduct:(req, res)=>{
+        Product.deleteOne({_id: req.params.id})
+        .then((deletedProduct)=> res.json(deletedProduct))
+        .catch((err)=> console.log(err))
+    },
+    // // delete all products
+    // deleteAllProducts: (res, req)=>{
+    //     Product.deleteMany({})
+    //         .then((allDeletedProducts) => res.json(allDeletedProducts))
+    //         .catch((err)=> console.log(err))
+    // },
 
 
 };
